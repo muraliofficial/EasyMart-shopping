@@ -1,0 +1,164 @@
+body {
+    background-color: #f5f5f5;
+}
+#caro{
+    width: 80%;
+}
+#Spicescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+#Beveragescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+#Snackscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+#Staplescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+#Personalcarecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+#Homecarecarecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.card{
+    padding: 1.2%;
+    width: 250px;
+    height: 260px;
+
+}
+
+.card img{
+    width: 230px;
+    height: 240px;
+}
+
+
+nav {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.nav-item {
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.container-fluid {
+    animation-name: navanimation;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+#imgid {
+    height: 50%;
+}
+
+@keyframes navanimation {
+    from {
+        position: relative;
+        top: -30px;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+    }
+}
+
+.nav-item:hover {
+    border: none;
+    background-color: #f1f1f1;
+
+}
+
+header {
+    z-index: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    transition: 0.5s;
+}
+
+.card {
+    border: none;
+    transition: 0.3s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.2;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.card:hover img {
+    transform: scale(1.05, 1.05);
+    filter: drop-shadow(0px 0px 7px #868686);
+}
+
+#fimg:hover {
+    filter: drop-shadow(0px 0px 20px #F5F5F5);
+    color: white;
+}
+
+#detailsid {
+    margin-top: 20px;
+}
+
+#footbtn {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+#footerid {
+    background-color: #8afffb;
+    width: 100%;
+}
+
+#fimg{
+    width: 30%;
+}
+
+#ftxt1,
+#ftxt2,
+#ftxt3
+{
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 85%;
+}
+.imgsec {
+    width: 50%;
+}

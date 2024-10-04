@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyMart || Staples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet"  
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "C6g5c03Bz-14eGNOe",
+            });
+        })();
+    </script>
+</head>
+<style>
+    #caro{
+        width: 80%;
+    }
+         #Staplescontainer {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 2vh;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card img {
+            width: 230px;
+            height: 240px;
+        }
+         
+</style>
+
+<body>
+    <header class="position-sticky top-0 shadow" id="headerid">
+        <nav class="navbar navbar-expand-lg p-3" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="easymartlogo" href="./index.html"><img src="./images/easymart.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="Headdropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Catgories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="Headdropdown">
+                                <li><a class="dropdown-item" href="./easymart_spices.html">Spices</a></li>
+                                <li><a class="dropdown-item" href="./easymart_snacks.html">Snacks</a></li>
+                                <li><a class="dropdown-item" href="./easymart_beverages.html">Beverages</a></li>
+                                <li><a class="dropdown-item" href="./easymart_staples.html">Staples</a></li>
+                                <li><a class="dropdown-item" href="./easymart_personalcare.html">personal Care</a></li>
+                                <li><a class="dropdown-item" href="./easymart_homecare.html">Home care</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./checkout.html" class="nav-link active">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Loginpage.html" class="nav-link active">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#footerid" class="nav-link active">Contactus</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid" id="caro">
+        <div id="carouselExample" class="carousel slide shadow" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/Staples/carousel.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="Body">
+        <br>
+        <center>
+            <h3>Staples</h3>
+        </center>
+        <div class="container" id="Staplescontainer">
+            <div class="card"><img src="./images/Staples/dhall.jpg"><h4>Dhall</h4>
+                <p>₹150</p>
+                <button class="btn btn-success" 
+                onclick="buy('Dhall', './images/Staples/dhall.jpg', 150)">Addto Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/flour.png"><h4>Wheat Flour</h4>
+                <p>₹70</p>
+                <button class="btn btn-success" onclick="buy('Wheat Flour','./images/Staples/flour.png', 70)">Addto Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/fortune 5L.jpg"><h4>Fortune 5L oil</h4>
+                <p>₹549</p>
+                <button class="btn btn-success" onclick="buy('Fortune 5L oil','./images/Staples/fortune 5L.jpg', 549)">Add to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/fortune oil.jpg"><h4>Fortune 1L oil</h4>
+                <p>₹123</p>
+                <button class="btn btn-success" onclick="buy('Fortune 1L oil', './images/Staples/fortune oil.jpg', 123)">Add to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/goldwinner.jpg"><h4>Gold Winner oil</h4>
+                <p>₹137</p>
+                <button class="btn btn-success" onclick="buy('Gold Winner', './images/Staples/goldwinner.jpg', 137)">Add to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/oil.jpg"><h4>Gold Winner oil5L</h4>
+                <p>₹600</p>
+                <button class="btn btn-success" onclick="buy('Gold Winner oil 5L', './images/Staples/oil.jpg', 600)">Add
+                    to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/india gate.jpg"><h4>India gate basmati rice 5kg</h4>
+                <p>₹400</p>
+                <button class="btn btn-success" onclick="buy('India gate basmati rice 5kg', './images/Staples/india gate.jpg', 400)">Add
+                    to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/moong dhall.jpg"><h4>Moong Dhall</h4>
+                <p>₹60</p>
+                <button class="btn btn-success" onclick="buy('Moong Dhall', './images/Staples/moong dhall.jpg', 60)">Add
+                    to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/orid dhall.jpg"><h4>Orid Dhall</h4>
+                <p>₹190</p>
+                <button class="btn btn-success" onclick="buy('Orid Dhall', './images/Staples/orid dhall.jpg', 190)">Add
+                    to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/Thoor Dhall.jpg"><h4>Toor Dhall</h4>
+                <p>₹180</p>
+                <button class="btn btn-success" onclick="buy('Toor Dhall', './images/Staples/Thoor Dhall.jpg', 180)">Add
+                    to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/sugar.jpg"><h4>Sugar</h4>
+                <p>₹45</p>
+                <button class="btn btn-success" onclick="buy('Sugar', './images/Staples/sugar.jpg', 45)">Add
+                    to Cart</button>
+            </div>
+            <div class="card"><img src="./images/Staples/sugarfree.jpg"><h4>Sugar free</h4>
+                <p>₹60</p>
+                <button class="btn btn-success" onclick="buy('Sugar free', './images/Staples/sugarfree.jpg', 60)">Add
+                    to Cart</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- footer page -->
+    <footer class="" id="footerid">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="detailsid" class="col-lg-4 col-md-2 col-sm-1">
+                    <h4>Any Queries ???</h4>
+                    <input id="ftxt1" type="text" class="form-control" autocomplete="off" placeholder="Enter Your name"
+                        required>
+                    <input id="ftxt2" type="text" class="form-control" autocomplete="off" placeholder="Mobile Number"
+                        required>
+                    <input id="ftxt3" type="text" class="form-control" autocomplete="off" placeholder="Email Id"
+                        required>
+                    <button type="submit" class="btn btn-secondary" id="footbtn" onclick="btnclick()"> submit</button>
+                </div>
+                <div class="col-lg-4 col-md-2 col-sm-1 text-center">
+                    <img class="imgsec" src="./images/easymart-2-removebg-preview.png">
+                    <p class="h5">Thanks for visiting Easymart</p>
+                </div>
+                <div class="col-lg-4 col-md-2 col-sm-1">
+                    <img src="./images/contatct support-Photoroom.png" id="fimg">
+                    <p class="h4">Contactus : <a href="#">easymartsupport@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <p class="">
+                    &#169 2024 All rights Reserved || Demo Project
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./subpage_script.js"></script>
+
+</html>

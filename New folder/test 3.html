@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spices Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <br>
+    <h1 class="text-center">
+        Sakthimasala Products
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card">
+                <img class="p-3 img-fluid w-75" src="./images/Spices/Sakthimasala page images/garam masala.png">
+                <p class="text-center text-body-secondary fs-5">Sakthi Garam Masala 100g <br>
+                    <span class="h4">₹25</span>
+                </p>
+                <button class="cart-button" onclick="addToCart('aachi Masala', './images/Spices/aachimasala.jpg', 20)">
+                    <span class="add-to-cart">Add to cart</span>
+                    <span class="added"> <i class="fa-solid fa-circle-check"></i> Done </span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fas fa-box"></i>
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card">
+                <img class="p-3 img-fluid w-75" src="./images/Spices/Sakthimasala page images/chilli powder.jpeg"
+                    alt="NO-IMAGE">
+                <p class="text-center text-body-secondary fs-5">Sakthi Chilli powder 100g <br> <span class="h4">
+                        ₹23</span> </p>
+                <button class="btn btn-success"
+                    onclick=" buy('Sakthi Chilli powder 100g','./images/Spices/Sakthimasala page images/chilli powder.jpeg', 23)">
+                    Add to cart
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card">
+                <img class="p-3 img-fluid w-75" src="./images/Spices/Sakthimasala page images/coriander powder.jpg"
+                    alt="">
+                <p class="text-center text-body-secondary fs-5">Sakthi Coriander 100g <br> <span class="h4">₹
+                        16</span> </p>
+                <button class="btn btn-success"
+                    onclick=" buy('Sakthi Coriander 100g','./images/Spices/Sakthimasala page images/coriander powder.jpg', 16)">
+                    Add to cart
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card">
+                <img class="p-3 img-fluid w-75" src="./images/Spices/Sakthimasala page images/trumeric powder.jpg"
+                    alt="">
+                <p class="text-center text-body-secondary fs-5">Sakthi Turmeric 100g <br> <span class="h4">₹
+                        22</span> </p>
+                <button class="btn btn-success"
+                    onclick=" buy('Sakthi Turmeric 100g','./images/Spices/Sakthimasala page images/trumeric powder.jpg', 22)">
+                    Add to cart
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card">
+                <img class="p-3 img-fluid w-75" src="./images/Spices/Sakthimasala page images/chicken masala.jpg"
+                    alt="">
+                <p class="text-center text-body-secondary fs-5">Sakthi Chicken Masala 100g <br> <span class="h4">₹
+                        26</span> </p>
+                <button class="btn btn-success"
+                    onclick=" buy('Sakthi Chicken Masala 100g','./images/Spices/Sakthimasala page images/chicken masala.jpg', 26)">
+                    Add to cart
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card">
+                <img class="p-3 img-fluid w-75" src="./images/Spices/Sakthimasala page images/biriyani masala.jpeg"
+                    alt="">
+                <p class="text-center text-body-secondary fs-5">Sakthi Biriyani Masala 100g <br> <span class="h4">₹
+                        20</span> </p>
+                <button class="btn btn-success"
+                    onclick=" buy('Sakthi biriyani Masala 100g','./images/Spices/Sakthimasala page images/biriyani masala.png', 20)">
+                    Add to cart
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card">
+                <img class="p-3 img-fluid w-75" src="./images/Spices/Sakthimasala page images/mutton masala.jpg"
+                    alt="">
+                <p class="text-center text-body-secondary fs-5">Sakthi Mutton Masala 100g <br> <span class="h4">₹
+                        20</span> </p>
+                <button class="btn btn-success"
+                    onclick=" buy('Sakthi mutton Masala 100g','./images/Spices/Sakthimasala page images/mutton masala.png', 20)">
+                    Add to cart
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card">
+                <img class="p-3 img-fluid w-75" src="./images/Spices/Sakthimasala page images/peper powder.jpg"
+                    alt="">
+                <p class="text-center text-body-secondary fs-5">Sakthi Pepper powder 100g <br> <span class="h4">₹
+                        20</span> </p>
+                <button class="btn btn-success"
+                    onclick=" buy('Sakthi peper Masala 100g','./images/Spices/Sakthimasala page images/peper masala.png', 20)">
+                    Add to cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./test.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
