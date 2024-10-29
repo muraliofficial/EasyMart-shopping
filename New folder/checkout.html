@@ -143,7 +143,7 @@
                     icon: "success"
                 }).then(() => {
                     localStorage.clear();
-                    window.onload = loadCartItems;
+                    window.location.reload();;
                     // Optionally redirect the user or update the UI
                 });
             } else {
